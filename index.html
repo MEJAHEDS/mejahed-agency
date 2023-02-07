@@ -10,16 +10,30 @@
         background-color: #f2f2f2;
         font-family: Arial, sans-serif;
         text-align: center;
+        overflow: hidden;
       }
-
+      eager-load {
+       color: #77736a;
+      }
       h1 {
         color: #333;
         margin-top: 50px;
       }
-
+      .who{
+        display: flex;
+        color: #77736a;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 20px;
+        justify-content: center;
+        margin: 44px;
+      }
       p {
         color: #888;
         margin-bottom: 50px;
+      }
+      .fab{
+        color: #99524d;
       }
 
       /* Style the form */
@@ -51,6 +65,17 @@
         width: 100%;
       }
 
+      .social-links{
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 20px;
+        padding: 30px;
+        gap: 40px;
+        
+      }
       input[type="submit"] {
         background-color: #333;
         border: none;
@@ -69,31 +94,7 @@
       }
     </style>
 
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
-      import { database } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js"
-    
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyB6VnFPMtIOBiF11TZA6L8VvZuVmAcCqRA",
-        authDomain: "mejahed-agency.firebaseapp.com",
-        projectId: "mejahed-agency",
-        storageBucket: "mejahed-agency.appspot.com",
-        messagingSenderId: "849288847886",
-        appId: "1:849288847886:web:1c27ca428f6b795941d25f"
-      };
-    
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      
-      // Get a reference to the database service
-       
-      const emailsRef = database.ref("emails");
-      emailsRef.push({email: "example@example.com"});
-
-      
-    </script>
+   
    
   </head>
   <body>
@@ -105,19 +106,21 @@
 
   </div>
 
-  <p>Hi, I'm Soufiane Mejahed, a Full Stack Developer from Morocco. I'm a self-taught developer who loves to learn new things and share my knowledge with others. I'm currently working on a few projects and I'm always looking for new opportunities.</p>
+  <p class="who">Hi, I'm Soufiane Mejahed, a Full Stack Developer from Morocco. I'm a self-taught developer who loves to learn new things and share my knowledge with others. I'm currently working on a few projects and I'm always looking for new opportunities.</p>
   
  
   
   <div class="social-links">
-    <a href="" class="fab fa-github social-icon"></a>
-    <a href= ""class="fab fa-linkedin social-icon"></a>
+    <a href="https://github.com/MEJAHEDS" class="fab fa-github social-icon"></a>
+    <a href= "https://www.linkedin.com/in/soufiane-mejahed/"class="fab fa-linkedin social-icon"></a>
+    <a href="https://twitter.com/?lang=fr" class="fab fa-twitter social-icon"></a>
+    <a href="https://www.instagram.com/immsoufiane/" class="fab fa-instagram social-icon"></a>
   </div>
 
 </div>
 
     </div>
-    <p style="text-align:center; font-size:20px; font-family:Arial, sans-serif;">
+    <p  style="text-align:center; font-size:20px; font-family:Arial, sans-serif;" class="eager">
       "Eager to tackle new projects and push the boundaries of web development."
     </p>
     
