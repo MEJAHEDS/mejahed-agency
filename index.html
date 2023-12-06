@@ -1,127 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Mejahed Agency | Coming Soon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <style>
-      body {
-        background-color: #f2f2f2;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-      }
-
-      h1 {
-        color: #333;
-        margin-top: 50px;
-      }
-
-      .who {
-        color: #77736a;
-        font-size: 20px;
-        font-weight: 500;
-        margin: 20px;
-        text-align: center;
-      }
-
-      p {
-        color: #888;
-        margin-bottom: 50px;
-        text-align: center;
-      }
-
-      .fab {
-        color: #99524d;
-      }
-
-      .form-container {
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-        display: inline-block;
-        padding: 30px;
-        text-align: left;
-        width: 90%; /* Adjusted width for smaller screens */
-        max-width: 500px; /* Added max-width to prevent it from getting too wide */
-        margin: 0 auto; /* Center the form on the page */
-      }
-
-      input[type="email"] {
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-sizing: border-box;
-        display: block;
-        font-size: 16px;
-        padding: 10px;
-        width: 100%;
-        margin-bottom: 20px; /* Added margin for spacing */
-      }
-
-      .social-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        font-size: 20px;
-        padding: 30px;
-        gap: 40px;
-      }
-
-      input[type="submit"] {
-        background-color: #333;
-        border: none;
-        border-radius: 5px;
-        color: #fff;
-        cursor: pointer;
-        display: block;
-        font-size: 16px;
-        margin-top: 20px;
-        padding: 10px;
-        width: 100%;
-      }
-
-      input[type="submit"]:hover {
-        background-color: #111;
-      }
-
-      .eager {
-        text-align: center;
-        font-size: 20px;
-        font-family: Arial, sans-serif;
-      }
-
-      @media only screen and (max-width: 375px) {
-        .form-container {
-          width: 90%;
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
         }
+
         h1 {
-          font-size: 30px;
+            color: #99524d;
+            margin-top: 50px;
         }
-      }
+
+        .who {
+            font-size: 18px;
+            font-weight: 300;
+            margin: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .img-pro img {
+            border-radius: 50%;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 24px;
+            padding: 20px;
+            gap: 40px;
+        }
+
+        .social-icon {
+            color: #99524d;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-icon:hover {
+            color: #fff;
+        }
+
+        input[type="email"] {
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #99524d;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px;
+            width: 80%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #773d33;
+        }
+
+        .eager {
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+        @media only screen and (max-width: 375px) {
+            input[type="email"],
+            input[type="submit"] {
+                width: 100%;
+            }
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="form-container">
-      <div class="presentaiton">
-        <div class="img-pro">
-          <img src="https://avatars.githubusercontent.com/u/113341694?v=4" alt="Soufiane Mejahed" width="200" height="200">
+        <div class="presentation">
+            <div class="img-pro">
+                <img src="https://avatars.githubusercontent.com/u/113341694?v=4" alt="Soufiane Mejahed" width="150"
+                    height="150">
+            </div>
+            <p class="who">Hi, I'm Soufiane Mejahed, a Full Stack Developer. I'm a self-taught developer who loves
+                to learn new things and share my knowledge with others. I'm currently working on a few projects and I'm
+                always looking for new opportunities.</p>
+            <div class="social-links">
+                <a href="https://github.com/MEJAHEDS" class="fab fa-github social-icon"></a>
+                <a href="https://www.linkedin.com/in/soufiane-mejahed/" class="fab fa-linkedin social-icon"></a>
+                <a href="https://twitter.com/?lang=fr" class="fab fa-twitter social-icon"></a>
+                <a href="https://www.instagram.com/immsoufiane/" class="fab fa-instagram social-icon"></a>
+            </div>
+            <p>Visit Mejahed Agency <a href="https://mejahed-agency.web.app/">here</a></p>
         </div>
-        <p class="who">Hi, I'm Soufiane Mejahed, a Full Stack Developer. I'm a self-taught developer who loves to learn new things and share my knowledge with others. I'm currently working on a few projects and I'm always looking for new opportunities.</p>
-        <div class="social-links">
-          <a href="https://github.com/MEJAHEDS" class="fab fa-github social-icon"></a>
-          <a href="https://www.linkedin.com/in/soufiane-mejahed/" class="fab fa-linkedin social-icon"></a>
-          <a href="https://twitter.com/?lang=fr" class="fab fa-twitter social-icon"></a>
-          <a href="https://www.instagram.com/immsoufiane/" class="fab fa-instagram social-icon"></a>
-        </div>
-        <p>Visit Mejahed Agency <a href="https://mejahed-agency.web.app/">here</a></p>
-      </div>
     </div>
     <p class="eager">"Eager to tackle new projects and push the boundaries of web development."</p>
-  </body>
+</body>
+
 </html>
